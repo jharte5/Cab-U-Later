@@ -20,9 +20,15 @@ function checkRideCost (morningCommute, eveningCommute, miles) {
     if(morningCommute === 'y') {
         cost =  (amRatePerMile * miles) + initAm;
         return '$' + cost 
-    }else if(eveningCommute === 'n') {
+    }else if(eveningCommute === 'y') {
         cost =  (pmRatePerMile * miles) + initPm;
         return '$' + cost 
+    } else if(morningCommute === 'n') {
+        cost = (pmRatePerMile * miles) + initPm;
+        return '$' + cost
+    } else if(eveningCommute === 'n') {
+        cost = (amRatePerMile * miles) + initPm;
+        return '$' + cost
     }
 }
 

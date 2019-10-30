@@ -1,4 +1,4 @@
-const result = window.prompt('How Much is this Going To Run Me? \
+const result = window.prompt('How Much Is This Going To Run Me? \
                                 Morning Commute? y/n \
                                 Evening Commute? y/n \
                                 Miles? ')
