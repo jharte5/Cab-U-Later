@@ -5,24 +5,29 @@
 
 
 // const result = prompt('How Much Is This Going To Run Me??')
-const initAm = 3.5;
-const initPm = 5;
-const amRatePerMile = 1.5;
-const pmRatePerMile = 2;
+
 
 function checkRideCost (morningCommute, eveningCommute, miles) {
+    const initAm = 3.5;
+    const initPm = 5;
+    const amRatePerMile = 1.5;
+    const pmRatePerMile = 2;
+
+    console.log(morningCommute)
+    console.log(eveningCommute)
+    console.log(miles)
     let cost = 0;
-    if(morningCommute === true) {
+    if(morningCommute === 'y') {
         cost =  (amRatePerMile * miles) + initAm;
         return cost 
-    }else if(eveningCommute === true) {
+    }else if(eveningCommute === 'n') {
         cost =  (pmRatePerMile * miles) + initPm;
         return cost 
     }
 }
 
 
-console.log(checkRideCost(true, false, 4))
+// console.log(checkRideCost(true, false, 4))
 
 
 

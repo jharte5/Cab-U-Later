@@ -1,11 +1,11 @@
 const result = window.prompt('How Much is this Going To Run Me?')
 const arrNum = result.split(' ')
-operation = result[0]  
-num1 = Number(arrNum[1])
-num2 = Number(arrNum[2])
+morningCommute = result[0]  
+eveningCommute = result[2]
+miles = Number(arrNum[2])
 // Array Deconstruction
 // const [operation, num1, num2] = result
-const resolution = calculate(operation, num1, num2);
+const resolution = checkRideCost(morningCommute, eveningCommute, miles);
  
 console.log(resolution)
 const printAnswer = document.querySelector('#result');
