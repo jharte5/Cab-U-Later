@@ -19,10 +19,10 @@ function checkRideCost (morningCommute, eveningCommute, miles) {
     let cost = 0;
     if(morningCommute === 'y') {
         cost =  (amRatePerMile * miles) + initAm;
-        return cost 
+        return '$' + cost 
     }else if(eveningCommute === 'n') {
         cost =  (pmRatePerMile * miles) + initPm;
-        return cost 
+        return '$' + cost 
     }
 }
 

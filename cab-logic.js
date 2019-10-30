@@ -1,4 +1,7 @@
-const result = window.prompt('How Much is this Going To Run Me?')
+const result = window.prompt('How Much is this Going To Run Me? \
+                                Morning Commute? y/n \
+                                Evening Commute? y/n \
+                                Miles? ')
 const arrNum = result.split(' ')
 morningCommute = result[0]  
 eveningCommute = result[2]
