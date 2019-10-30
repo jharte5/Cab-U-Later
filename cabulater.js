@@ -4,25 +4,25 @@
 // cost = ratePermile * miles + initial fare.
 
 
-const result = prompt('How Much Is This Going To Run Me??')
-// const initAm = 3.5;
-// const initPm = 5;
-// const amRatePerMile = 1.5;
-// const pmRatePerMile = 2;
+// const result = prompt('How Much Is This Going To Run Me??')
+const initAm = 3.5;
+const initPm = 5;
+const amRatePerMile = 1.5;
+const pmRatePerMile = 2;
 
-// function checkRideCost (morningCommute, eveningCommute, miles) {
-//     let cost = 0;
-//     if(morningCommute === true) {
-//         cost =  (amRatePerMile * miles) + initAm;
-//         return cost 
-//     }else if(eveningCommute === true){
-//         cost =  (pmRatePerMile * miles) + initPm;
-//         return cost 
-//     }
-// }
+function checkRideCost (morningCommute, eveningCommute, miles) {
+    let cost = 0;
+    if(morningCommute === true) {
+        cost =  (amRatePerMile * miles) + initAm;
+        return cost 
+    }else if(eveningCommute === true) {
+        cost =  (pmRatePerMile * miles) + initPm;
+        return cost 
+    }
+}
 
 
-// console.log(checkRideCost(true, false, 4))
+console.log(checkRideCost(true, false, 4))
 
 
 
